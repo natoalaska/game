@@ -1,1 +1,1 @@
-$.getScript('main.js');
+$.getScript('js/main.js');
