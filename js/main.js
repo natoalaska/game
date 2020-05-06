@@ -1,11 +1,11 @@
 var savegame = JSON.parse(localStorage.getItem("goldMinerSave"))
 
-var gameData = {
-    gold: 0,
-    goldPerClick: 1,
-    goldPerClickCost: 10,
-    lastTick: Date.now()
-}
+//var gameData = {
+//    gold: 0,
+//    goldPerClick: 1,
+//    goldPerClickCost: 10,
+//    lastTick: Date.now()
+//}
 
 function update(id, content) {
     document.getElementById(id).innerHTML = content;
