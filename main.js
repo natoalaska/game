@@ -1,12 +1,14 @@
 var gameData = {
     gold: 0,
     goldPerClick: 1,
-    goldPerClickCost: 10
+    goldPerClickCost: 10,
+    lastTick: Date.now()
 }
 
 var savegame = JSON.parse(localStorage.getItem("goldMinerSave"))
 if (savegame !== null) {
     gameData = savegame
+    if (typeof savegame.lastTick !== 'undefined') gameData.lastTick = savegame.lastTick;
 }
 
 function mineGold() {
