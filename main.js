@@ -26,7 +26,11 @@ function buyGoldPerClick() {
 }
 
 var mainGameLoop = window.setInterval(function() {
-    mineGold()
+    diff = Date.now() - gameData.lastTick;
+    gameData.lastTick = Date.now()
+    gameData.gold += gameData.goldPerClick * (diff / 1000)
+    document.getElementById("goldMined").innerHTML = gameData.gold
+    //mineGold()
 }, 1000)
 
 var saveGameLoop = window.setInterval(function() {
