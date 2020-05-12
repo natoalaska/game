@@ -1,5 +1,7 @@
+$.getScript('js/constants.js')
 $.getScript('js/gameData.js')
 $.getScript('js/save.js')
 $.getScript('js/format.js')
 $.getScript('js/mainFunctions.js')
+$.getScript('js/layout.js')
 $.getScript('js/start.js')

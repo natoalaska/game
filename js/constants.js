@@ -1,0 +1,1 @@
+const goldDisplay = '<p><span id="goldMined">0</span> Gold Mined</p>'
